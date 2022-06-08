@@ -1,0 +1,11 @@
+saucenao_search
+Find the source of an image url or file using saucenao
+
+Usage
+Run:
+	saucenao_search <url>
+
+Installation
+Run the following commands to download the libraries and install the script:
+	npm install
+	./install

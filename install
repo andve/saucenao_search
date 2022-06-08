@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+INSTALL_PATH="/usr/local/bin"
+
+if [ -L "${INSTALL_PATH}/saucenao_search" ]; then
+	rm "${INSTALL_PATH}/saucenao_search"
+fi
+
+ln -sv $(realpath saucenao_search.js)  "${INSTALL_PATH}/saucenao_search"
+
+if [ -f "${INSTALL_PATH}/saucenao_search" ]; then
+	chmod -v 755 "${INSTALL_PATH}/saucenao_search"
+fi
